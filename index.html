@@ -15,6 +15,7 @@
   <header>
     <h1>Get Activities</h1>
   </header>
+
   <div id="mainGrid">
     <div id="randAct" class="boxes">
       <button id="randButton">Get Random Activity</button>
@@ -22,14 +23,34 @@
         <h4 id="randResponse">Click Button to get a new random activity</h4>
       </div>
     </div>
-    <div id="otherAct" class="boxes">
-      <button id="otherButton">Get Random Activity</button>
-      <div id="otherResponse">
-        <h4>Click Button to get a new random activity</h4>
+    <div id="partAct" class="boxes">
+
+      <div>
+        <select name="numParts" id="numParts">
+          <option value="1">1 Person</option>
+          <option value="2">2 People</option>
+          <option value="3">3 People</option>
+          <option value="4">4 People</option>
+        </select>
+        <button id="partButton">Get Activity</button>
+      </div>
+
+      <div>
+        <h4 id="partResponse">Choose Participants then click "Get Activity"</h4>
       </div>
     </div>
-  </div>
+    <div id="customAct" class="boxes">
+      <div id="inputBox"><input name="strSearch" id="strSearch" placeholder="Enter Activity Type"></div>
+      </input>
+      <button id="custButton">Get Activity</button>
+      <div>
+        <h4 id="customResponse">Enter Activity Type and click search</h4>
+      </div>
 
+
+
+    </div>
+  </div>
   <script src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'></script>
   <script src='app.js'></script>
 </body>
